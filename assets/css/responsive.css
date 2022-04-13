@@ -1,0 +1,39 @@
+
+@media screen and (max-width: 750px) {
+  
+  .grid-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 600px auto auto auto auto;
+    width: 100%;
+    align-content: center;
+  }
+
+  .grid-imagem{
+    grid-column: 1;
+    margin-top: 50%;
+    grid-row: 1 / span 2;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .titulo {
+    grid-column: 1;
+    grid-row: 3;
+    text-align: center;
+  }
+  
+  .texto {
+   grid-column: 1;
+   grid-row: 4;
+   text-align: center;
+  }
+  
+  .lista {
+    grid-column: 1;
+    grid-row: 5;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
